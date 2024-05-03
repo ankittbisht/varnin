@@ -6,13 +6,13 @@ import bnrImg from "../assets/image 4.png";
 import bgImg from "../assets/Rectangle 78.png";
 const MyComponent = () => {
   return (
-    <div className="container mx-auto  px-[160px] py-[100px]">
+    <div className="container mx-auto px-4 md:px-[160px] py-9 md:py-[100px] overflow-hidden">
       <div className="grid grid-cols-12 gap-4">
         {/* First Column */}
-        <div className="col-span-8 md:col-span-8 ">
+        <div className="col-span-12 md:col-span-8 ">
           {/* Heading and Paragraph */}
-          <div className="pb-20">
-            <h2 className="text-7xl font-normal  mb-6 font-body">Contact Us</h2>
+          <div className="pb-4 md:pb-20">
+            <h2 className="text-4xl md:text-7xl font-normal  mb-6 font-body">Contact Us</h2>
             <p className="text-sm text-gray-600 mb-4 font-roboto">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -23,11 +23,11 @@ const MyComponent = () => {
             </p>
           </div>
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 x">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 w-[50%] md:w-full">
             {/* Card 1 */}
             <div className="bg-white rounded-lg  text-start">
               <img src={call} alt="Logo 1" className="text-start h-11" />
-              <h3 className="text-3xl font-normal font-body mb-2 mt-2">
+              <h3 className="text-2xl md:text-3xl font-normal font-body mb-2 mt-2">
                 Let's talk
               </h3>
               <p className="text-xs font-normal font-roboto text-[#242424]">
@@ -40,7 +40,7 @@ const MyComponent = () => {
             {/* Card 2 */}
             <div className="bg-white ">
               <img src={location} alt="Logo 2" className="text-start h-10" />
-              <h3 className="text-3xl font-normal font-body  mb-2 mt-2">
+              <h3 className="text-2xl md:text-3xl font-normal font-body  mb-2 mt-2">
                 Address
               </h3>
               <p className="text-xs  font-normal font-roboto text-[#242424]">
@@ -50,7 +50,7 @@ const MyComponent = () => {
             {/* Card 3 */}
             <div className="bg-white ">
               <img src={support} alt="Logo 3" className="text-start  h-10" />
-              <h3 className="text-3xl   mb-2 font-normal font-body mt-2">
+              <h3 className="text-2xl md:text-3xl   mb-2 font-normal font-body mt-2">
                 Support
               </h3>
               <p className="text-xs  font-normal font-roboto text-[#242424]">
@@ -76,10 +76,10 @@ const MyComponent = () => {
           </button>
         </div>
         {/* Second Column */}
-        <div className="col-span-8 md:col-span-4 relative">
+        <div className="col-span-12 md:col-span-4 relative">
           {/* Images */}
-          <img src= {bgImg} alt="Image 2" className="top-[15px] left-[280px] w-[140px] absolute z-0" />
-          <img src={bnrImg} alt="Image 1" className="top-[35px] left-[100px] mb-4 absolute z-10" />
+          <img src= {bgImg} alt="Image 2" className="h-[100px] md:h-full top-[-470px] md:top-[15px] left-[254px] md:left-[280px] w-[140px] absolute z-0" />
+          <img src={bnrImg} alt="Image 1" className= "top-[-455px]  md:top-[35px] left-[180px] md:left-[100px] h-[200px] md:h-full w-2/4 md:w-full mb-4 absolute z-10" />
           
         </div>
       </div>

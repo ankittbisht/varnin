@@ -1,27 +1,28 @@
 import React from "react";
+
 import img1 from "../assets/[Downloader 2.png";
 
 const TwoColumnComponent = () => {
   return (
-    <div className="container mx-auto pt-4 pb-16">
-      <div className="grid grid-cols-12 lg:grid-cols-2 gap-4">
+    <div className="container mx-auto pt:0 md:pt-4 pb-0 md:pb-16">
+      <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
         {/* Left Column */}
         <div
           className="flex flex-col justify-center relative text-left
-left-[220px] z-10 top-[-40px] min-w-[410px]    lg:w-full"
+ z-10 left-8 top-0 md:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[410px] text-white md:text-black"
         >
           {/* Heading */}
-          <h2 className="text-[40px] font-normal font-body mb-2">
+          <h2 className="text-2xl md:text-[40px] leading-10 font-normal font-body mb-2">
             Witness superior quality, luxurious and value-engineered buildings
           </h2>
           {/* Description */}
-          <p className="text-xs text-gray-600 mb-4 font-roboto text-left">
+          <p className="text-sm md:text-xs text-white md:text-[#898989] mb-4 font-roboto text-left">
             We provide design consulting renderings with a touch of poetry
           </p>
           {/* Button */}
           <button
             className="bg-[#0A23C7] text-center px-2 py-2
-  text-white font-normal text-sm flex items-center gap-2 w-[230px] font-roboto justify-center"
+  text-white font-normal text-sm md:text-sm flex items-center gap-2 w-[230px] font-roboto justify-center"
           >
             Get first free consultation
             <svg
@@ -44,7 +45,7 @@ left-[220px] z-10 top-[-40px] min-w-[410px]    lg:w-full"
           <img
             src={img1}
             alt="Image"
-            className=" relative lg:left-[-55px]  min-w-[678px] h-[600px] "
+            className=" relative left-[-40px]  md:left-[-55px] min-w-[100dvw] md:min-w-[678px] h-[400px] md:h-[600px]  "
           />
         </div>
       </div>

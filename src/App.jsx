@@ -7,21 +7,16 @@ import Choosesection from "./Components/Choosesection";
 import MyComponent from "./Components/Contactus";
 import Footer from "./Components/Footer";
 import Slider from "./Components/Slider";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
-
-  return <>
-  <Navbar/>
-  <TwoColumnComponent/>
-  <Aboutus/>
-  <CardComponent/>
-  <Choosesection/>
-  <Slider/>
-  <MyComponent/>
-  <Footer/>
- 
-  </>
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

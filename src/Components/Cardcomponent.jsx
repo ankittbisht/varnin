@@ -6,7 +6,7 @@ import fourth from "../assets/svgimages/fourth.svg";
 
 const CardComponent = () => {
   return (
-    <div className="container mx-auto mt-[23px] px-[160px] py-[90px] bg-[#0A23C7]">
+    <div className="container  mt-[23px] px-5 md:px-[160px] py-[90px] bg-[#0A23C7]">
       {/* Heading and one-liner intro */}
       <div className="text-center mb-8">
         <h1 className="text-4xl font-normal text-white mb-2 font-body ">
@@ -22,12 +22,12 @@ const CardComponent = () => {
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Card 1 */}
         <div className="h-full min-h-64 bg-white  p-4">
-          <img src={ArchitectSVG} alt="Logo 1" className="h-[6rem] py-4" />
+          <img src={ArchitectSVG} alt="Logo 1" className="h-28 md:h-[6rem] py-4" />
 
-          <h2 className="text-base  pb-2 font-body font-normal">
+          <h2 className="text-xl md:text-base  pb-2 font-body font-normal">
             Architectural Planning
           </h2>
-          <p className="text-xs font-roboto text-[#242424]">
+          <p className="text-base md:text-xs font-roboto text-[#242424]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sed
             duis blandit tincidunt massa sed arcu posuere.
           </p>
@@ -35,12 +35,12 @@ const CardComponent = () => {
 
         {/* Card 2 */}
         <div className="h-full min-h-64 bg-white  p-4">
-          <img src={second} alt="Logo 2" className="h-[6rem] py-4" />
+          <img src={second} alt="Logo 2" className=" h-28 md:h-[6rem] py-4" />
 
-          <h2 className="text-base pb-2 font-body font-normal">
+          <h2 className="text-xl md:text-base pb-2 font-body font-normal">
             Quality completion
           </h2>
-          <p className="text-xs font-roboto text-[#242424]">
+          <p className="text-base md:text-xs font-roboto text-[#242424]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sed
             duis blandit tincidunt massa sed arcu posuere.
           </p>
@@ -48,11 +48,11 @@ const CardComponent = () => {
 
         {/* Card 3 */}
         <div className="h-full min-h-64 bg-white  p-4">
-          <img src={third} alt="third" className="h-[6rem] py-4" />
-          <h2 className="text-base  pb-2 font-body font-normal">
+          <img src={third} alt="third" className="h-28 md:h-[6rem] py-4" />
+          <h2 className="text-xl md:text-base pb-2 font-body font-normal">
             Maintaining Budgetary
           </h2>
-          <p className="text-xs font-roboto text-[#242424]">
+          <p className=" text-base md:text-xs font-roboto text-[#242424]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sed
             duis blandit tincidunt massa sed arcu posuere.
           </p>
@@ -60,11 +60,11 @@ const CardComponent = () => {
 
         {/* Card 4 */}
         <div className="h-full min-h-60 bg-white  p-4">
-          <img src={fourth} alt="Logo 4" className="h-[6rem] py-4" />
-          <h2 className="text-base text-gray-800 pb-2 font-body font-normal">
+          <img src={fourth} alt="Logo 4" className=" h-28 md:h-[6rem] py-4" />
+          <h2 className="text-xl md:text-base text-gray-800 pb-2 font-body font-normal">
             Quality ensuring
           </h2>
-          <p className="text-xs font-roboto text-gray-600">
+          <p className="text-base md:text-xs font-roboto text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea sed
             duis blandit tincidunt massa sed arcu posuere.
           </p>
